@@ -4,18 +4,10 @@
   box-sizing: border-box;
 }
 
-
-.debug {
+/* .debug {
   border: 1px solid black; 
   background-color:bisque;
-}
-
-
-/* body */
-body{
-  background-image:url('../img/cork.png');
-}
-
+} */
 
 /* header*/
 h1{
@@ -23,24 +15,30 @@ h1{
   font-style: italic;
   font-size: 50px;
 }  
-  
+
 header{
   height:120px;
   background-image: url('../img/wall.png');
+  position: fixed;
+  width:100%;
+  z-index:999;
+  opacity: 2;
 }  
+
+/* main */
+main{
+  background-image:url('../img/cork.png');
+  padding-top:150px
+}
 
 /* card */
 .card-dm{
  background-color: white;
- height:320px;
+ box-shadow: 1px 0px 5px rgb(33 30 30);
 }
 
 .text {
-  height:70px
-}
-
-.image{
-  height:calc(100% - 70px);
+  height:70px ;
 }
 
 p{
@@ -54,3 +52,4 @@ p{
   transform: translate(-50%);
   top: -10px
 }
+
