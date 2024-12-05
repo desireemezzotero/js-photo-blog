@@ -1,5 +1,9 @@
 const endPoint = 'https://jsonplaceholder.typicode.com/photos?_limit=6';
 const row = document.querySelector('.row')
+
+
+
+
 let ok;
 axios.get(endPoint)
   .then (response => {
@@ -28,7 +32,6 @@ axios.get(endPoint)
           </div><!-- col -->
       `
     })
-
   })
 
 
